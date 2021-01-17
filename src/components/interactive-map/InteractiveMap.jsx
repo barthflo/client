@@ -16,7 +16,7 @@ import "./pop_up_component/pop.css";
 import tractor from "../../assets/tractor_icon-min.png";
 import QGIcon from "../../assets/home_icon-min.png";
 import buyer from "../../assets/buyer_icon-min.png";
-import Popup_component from './pop_up_component/popup-component';
+import PopupComponent from './pop_up_component/popup-component';
 import { FcSearch } from 'react-icons/fc';
 
 export const qgIcon = new L.Icon({
@@ -198,7 +198,7 @@ export default function InteractiveMap() {
           datas.slice(0, 1000).map((data, index) => (
             <Marker position={[data.lat, data.long]} icon={tractorIcon}>
               <Popup className="popup-farmer">
-                <Popup_component infos={data} />
+                <PopupComponent infos={data} />
               </Popup>
             </Marker>
           ))

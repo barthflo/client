@@ -20,7 +20,7 @@ const ChatRoom = ({user, updateRender}) => {
         socket.emit('join', {name: user, room:room}, () => {
 
         });
-    }, [ENDPOINT]);
+    }, [ENDPOINT, user]);
 
     useEffect (() => {
         socket.on('message', (message) => {

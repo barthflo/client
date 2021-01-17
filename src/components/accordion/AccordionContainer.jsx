@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import AccordionIcon from "./AccordionIcon";
-import Accordion_info_price from "./Accordion_info_price";
+import AccordionInfoPrice from "./Accordion_info_price";
 
 const ChatContainer = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const ChatContainer = ({ className }) => {
         }
       >
         <h2 className="mb-5">Moyenne globale des prix de ventes en France</h2>
-        <Accordion_info_price />
+        <AccordionInfoPrice />
       </aside>
       <AccordionIcon openChat={openChat} />
     </Fragment>

@@ -20,7 +20,7 @@ function Popup_component(props) {
       .catch(function (erreur) {
         console.log(erreur);
       });
-  }, []);
+  }, [infos.farmer_id]);
 
   return (
       <section className="pop-up-container">
