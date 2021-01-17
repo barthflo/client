@@ -12,7 +12,7 @@ const ChatRoom = ({user, updateRender}) => {
     const room = "Salon Général";
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'http://localhost:8000';
+    const ENDPOINT = 'https://comparateur-agricole.herokuapp.com';
 
     useEffect(() => {
         socket= io(ENDPOINT);

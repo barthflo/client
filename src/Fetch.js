@@ -1,1 +1,1 @@
-export const FETCH = 'http://localhost:8000/api';
+export const FETCH = 'https://comparateur-agricole.herokuapp.com/api';
